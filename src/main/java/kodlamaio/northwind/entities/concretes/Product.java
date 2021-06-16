@@ -9,6 +9,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
@@ -20,7 +22,7 @@ import lombok.NoArgsConstructor;
 @Table(name="products")
 @AllArgsConstructor
 @NoArgsConstructor
-
+@CrossOrigin
 public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY )
